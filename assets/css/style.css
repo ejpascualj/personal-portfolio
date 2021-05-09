@@ -1,4 +1,4 @@
-/* 0. GENERAL PROPERTIES */
+/* 0. GENERAL PROPERTIES
 :root{
     --blue01: #03045e;
     --blue02: #023e8a;
@@ -41,7 +41,7 @@ p, ul{
     color: var(--blue02);
 }
 
-/* 1. HEADER */
+// 1. HEADER //
 
 header {
     overflow: hidden;
@@ -59,7 +59,7 @@ header section {
 	padding: 0px 0px;
 }
 
-/* 1.2. TITLE */
+// 1.2. TITLE //
 header section h1{
     float: left;
     width: 30%;
@@ -77,7 +77,7 @@ header section h1 a {
     color: var(--blue09);
 }
 
-/* 1.2. NAVIGATION BAR */
+// 1.2. NAVIGATION BAR //
 nav{
     float: right;
     width: 50%;
@@ -116,7 +116,7 @@ header nav a:hover{
     color: var(--blue02);
 }
 
-/* 2. Main */
+// 2. Main //
 main{
     width: 100%;
     margin: 0 auto;
@@ -124,7 +124,7 @@ main{
     background: var(--blue09);
 }
 
-/* 2.1. About Me */
+// 2.1. About Me //
 #about-me{
     float:none;
     width: 100%x;
@@ -143,7 +143,7 @@ main{
 	text-align: justify;
 }
 
-/* 2.2. Projects Portfolio */
+// 2.2. Projects Portfolio //
 #work {
     overflow: hidden;
     width: 100%;
@@ -177,7 +177,7 @@ main{
 #project2 {
 	float: left;
 	width: 30%;
-	/* margin-right: 50px; */
+	// margin-right: 50px; //
 }
 
 #project3 {
@@ -188,7 +188,7 @@ main{
 #project4 {
 	float: left;
 	width: 30%;
-	/* margin-right: 50px; */
+	// margin-right: 50px; //
 }
 
 #project5 {
@@ -209,8 +209,8 @@ main{
 	text-align: center;
 	text-decoration: none;
 }
-
-/* 2.3. Resume */
+//  //
+// 2.3. Resume //
 #resume{
     float: left;
 	width: 66%;
@@ -232,7 +232,7 @@ main{
 	text-align: justify;
 }
 
-/* 2.4. Contact Information (Aside) */
+// 2.4. Contact Information (Aside) //
 aside{
     float: right;
     width: 27%;
@@ -262,7 +262,7 @@ aside li {
 	border-left: none;
 }
 
-/* 3. Footer */
+// 3. Footer //
 footer{
     height: 50px;
     margin: 0 auto;
@@ -279,7 +279,7 @@ footer h2, footer p{
 	color: var(--blue07);
 }
 
-/* Responsiveness */
+// Responsiveness //
 
 @media screen and (max-width: 768px) {
     
@@ -315,7 +315,8 @@ footer h2, footer p{
     .container #project5 {order: 5;}
 }
 
-/* scrolling beahvior*/
+// scrolling beahvior//
 html {
     scroll-behavior: smooth;
-}
+} 
+*/

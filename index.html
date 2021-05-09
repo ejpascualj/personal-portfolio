@@ -44,24 +44,26 @@
                         <a class="nav-link" href="#resume">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-information">Contact Information</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    
     <main>
         <!-- ABOUT ME -->
-        <div class="container p-1 pt-5">
+        <div class="container p-1 pt-5" id="about-me">
+            <h2 class="mt-0 text-center">About Me</h2>
             <div class="media">
                 <img src="https://via.placeholder.com/200" class="align-self-center mr-3" alt="headshot">
                 <div class="media-body">
-                    <h2 class="mt-0 text-center">About Me</h2>
                     <p>
-                        Hi There! Thanks for visiting my portfolio. My name is Emilio and I'm a chemical engineer based in Panama. I'm interested in data science, back-end development, marketing technology (MarTech). I'm currently learning full-stack web development, and this portfolio showcases all the cool projects I've been working on.
+                        Hi There! Thanks for visiting my portfolio. My name is Emilio and I'm a chemical engineer (and amateur developer) based in Panama. I'm interested in data science, back-end development, marketing technology (MarTech). I'm currently learning full-stack web development, and this portfolio showcases all the cool projects I've been working on.
                     </p>
                     <p>
-                        Let's connect! Below you'll find my resume and different ways to contact me. Please reach out if you have any questions about my portfolio or if you want to connect professionally.
+                        Let's connect! Below you'll find my resume and different ways to contact me. Please reach out if
+                        you have any questions about my portfolio or if you want to connect professionally.
                         Cheers!
                     </p>
                 </div>
@@ -69,7 +71,7 @@
         </div>
 
         <!-- WORK -->
-        <div class="container p-1 pt-5">
+        <div class="container p-1 pt-5" id="work">
             <h2 class="text-center">Work</h2>
             <!-- FEATURED CARD -->
             <div class="row justify-content-center p-2">
@@ -78,53 +80,60 @@
                     <img src="https://via.placeholder.com/250x100" class="" alt="">
                     <div class="card-body">
                         <h5 class="card-title">BM Trade Analysis</h5>
-                        <p class="card-text">Provides real-time data for the USD/MXN exchange rate, related news, and historical trends to allow traders to make informed decisions. This project was done in collaboration with GitHub users danrub98, betovaldez, and andresplasenciaborja.</p>
-                        <a href="https://ejpascualj.github.io/BM-Trade-Analysis/" class="btn btn-primary">Let's Trade!</a>
-                        <a href="#" class="btn btn-secondary">Repo</a>
+                        <p class="card-text">Provides real-time data for the USD/MXN exchange rate, related news, and
+                            historical trends to allow traders to make informed decisions. This project was done in
+                            collaboration with GitHub users danrub98, betovaldez, and andresplasenciaborja.</p>
+                        <a href="https://ejpascualj.github.io/BM-Trade-Analysis/" target="_blank" class="btn btn-primary" >Let's
+                            Trade!</a>
+                        <a href="https://github.com/ejpascualj/BM-Trade-Analysis" target="_blank" class="btn btn-secondary">Repo</a>
                     </div>
                 </div>
             </div>
 
-            <div class="row p-2">
+            <div class="row justify-content-center p-2">
                 <!-- CARD 01 -->
                 <div class="col p-1">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card justify-content-center" style="width: 18rem;">
                         <img src="https://via.placeholder.com/250" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">
-                                Displays the current weather for a city and the forecast for the upcoming week using Open Weather Map API, and locally stores your latest searches. 
+                                Displays the current weather for a city and the forecast for the upcoming week using
+                                Open Weather Map API, and locally stores your latest searches.
                             </p>
-                            <a href="#" class="btn btn-primary">How's the weather?</a>
-                            <a href="#" class="btn btn-secondary">Repo</a>
+                            <a href="https://ejpascualj.github.io/weather-dashboard/" target="_blank" class="btn btn-primary">How's the weather?</a>
+                            <a href="https://github.com/ejpascualj/weather-dashboard" target="_blank" class="btn btn-secondary">Repo</a>
                         </div>
                     </div>
                 </div>
                 <!-- CARD 02 -->
                 <div class="col p-1">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card justify-content-center" style="width: 18rem;">
                         <img src="https://via.placeholder.com/250" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Password Generator</h5>
                             <p class="card-text">
-                                Generates a random password based on user input, ranging between 8 and 128 characters, and containing uppercase, lowercase, numbers, and special characters.
+                                Generates a random password based on user input, ranging between 8 and 128 characters,
+                                and containing uppercase, lowercase, numbers, and special characters.
                             </p>
-                            <a href="https://ejpascualj.github.io/password-generator/" class="btn btn-primary">Generate a Password!</a>
-                            <a href="#" class="btn btn-secondary">Repo</a>
+                            <a href="https://ejpascualj.github.io/password-generator/" target="_blank" class="btn btn-primary">Generate
+                                a Password!</a>
+                            <a href="https://github.com/ejpascualj/password-generator" target="_blank" class="btn btn-secondary">Repo</a>
                         </div>
                     </div>
                 </div>
                 <!-- CARD 03 -->
                 <div class="col p-1">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card justify-content-center" style="width: 18rem;">
                         <img src="https://via.placeholder.com/250" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Coding Quiz</h5>
                             <p class="card-text">
-                                Timed and interactive javascript coding quiz with multiple choice question, coded in html and javascript and designed using bootstrap. 
+                                Timed and interactive javascript coding quiz with multiple choice question, coded in
+                                html and javascript and designed using bootstrap.
                             </p>
-                            <a href="https://ejpascualj.github.io/code-quiz/" class="btn btn-primary">Quiz your JS!</a>
-                            <a href="#" class="btn btn-secondary">Repo</a>
+                            <a href="https://ejpascualj.github.io/code-quiz/" target="_blank" class="btn btn-primary">Quiz your JS!</a>
+                            <a href="https://github.com/ejpascualj/code-quiz" target="_blank" class="btn btn-secondary">Repo</a>
                         </div>
                     </div>
                 </div>
@@ -132,32 +141,20 @@
 
         </div>
 
-
-
-
-
         <!-- RESUME -->
-        <div class="container p-1 pt-5">
+        <div class="container p-1 pt-5" id="resume">
             <h2 class="text-center">Resume</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet nisl sed nulla ultrices tempus.
-                Sed
-                tristique velit non posuere fermentum. Etiam mollis eleifend sodales. Mauris blandit mattis pretium.
-                Cras sed
-                magna lobortis, pulvinar erat nec, cursus urna. Ut massa tortor, posuere id risus quis, feugiat
-                hendrerit
-                libero. Nulla condimentum leo in euismod ullamcorper.
+                I've had a strange career path, which is reflected in my resume and LinkendIn. My academic background is
+                in chemical engineering, and I have worked in consulting, procurement, and most recently data analytics.
             </p>
             <p>
-                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer porta
-                urna et
-                enim interdum dictum. Cras tincidunt diam eget viverra elementum. Aliquam gravida eget odio eu
-                scelerisque.
-                Morbi rhoncus malesuada nisi, a pulvinar ex tincidunt pellentesque. Curabitur faucibus luctus nisl,
-                gravida
-                mollis sem ullamcorper quis. Quisque non gravida magna. Duis dapibus faucibus pretium. Sed placerat
-                turpis
-                ipsum, sed faucibus augue semper vitae.
+                I'm currently enrolled on a full-stack web development bootcamp to further hone my programming skills,
+                and apply this knowledge to my everyday work. By the end of 2021, I expect to be profecient in: HTML,
+                CSS, JavaScript, APIs, Node.js, OOP, SQL, and React.
+            </p>
+            <p>
+                You can view my latest resume below or download a copy <a href="" download="here" target="_blank">here</a>.
             </p>
             <div class="row justify-content-center">
                 <iframe src="C:\Users\ejpascual\Documents\Resume - Emilio J Pascual (Jan 2021) v25.pdf" width="90%"
@@ -167,21 +164,21 @@
         </div>
 
         <!-- CONTACT -->
-        <div class="container p-1 pt-5">
-            <aside id="contact-information">
-                <h2>Contact Information</h2>
+        <div class="container p-1 pt-5" id="contact">
+                <h2 class="text-center">Contact Information</h2>
+                <p>Let's connect! Feel free to reach out in any of the following ways:</p>
                 <ul>
-                    <li>Email: <a href="mailto:email@email.com">email@email.com</a></li>
-                    <li>Phone: (888) 888-8888</li>
-                    <li>Linkedin: <a href="linkedin.com/in/placeholder">@placeholder</a></li>
+                    <li>Email: <a href="mailto:ejp.coding@gmail.com">ejp.coding@gmail.com</a></li>
+                    <li>Phone: (+507) 6025-4183</li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/ejpascualj" target="_blank" >linkedin.com/in/ejpascualj</a></li>
+                    <li>GitHub: <a href="https://github.com/ejpascualj" target="_blank" >@ejpascualj</a></li>
                 </ul>
-            </aside>
         </div>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2021</p>
+        <p class="text-center">&copy; 2021</p>
     </footer>
 
     <!-- JavaScript -->
@@ -195,65 +192,4 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
-
-<!-- PENDINGS:
-    Add correct links to navigation bar
-    Add formating to navigation bar
-    
--->
-
-<!-- <article id="about-me">
-            <h2>About Me</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Proin laoreet nisl sed nulla ultrices tempus.
-                Sed tristique velit non posuere fermentum.
-                Etiam mollis eleifend sodales.
-                Mauris blandit mattis pretium.
-                Cras sed magna lobortis, pulvinar erat nec, cursus urna.
-                Ut massa tortor, posuere id risus quis, feugiat hendrerit libero.
-                Nulla condimentum leo in euismod ullamcorper.
-            </p>
-            <p>
-
-            </p>
-        </article> -->
-
-<!-- 2.2. Projects Portfolio -->
-<!-- <article id="work">
-            <h2>Work</h2>
-            <div class="container">
-                <section id="project1">
-                    <h3>Placeholder 1</h3>
-                    <img src="./assets/images/project_placeholder_600x300px.png" alt="">
-                    <p>Brief description</p>
-                    <a class="button" href="">Explore</a>
-                </section>
-                <section id="project2">
-                    <h3>Placeholder 2</h3>
-                    <img src="./assets/images/project_placeholder_300px.png" alt="">
-                    <p>Brief description</p>
-                    <a class="button" href="">Explore</a>
-                </section>
-                <section id="project3">
-                    <h3>Placeholder 3</h3>
-                    <img src="./assets/images/project_placeholder_300px.png" alt="">
-                    <p>Brief description</p>
-                    <a class="button" href="">Explore</a>
-                </section>
-                <section id="project4">
-                    <h3>Placeholder 4</h3>
-                    <img src="./assets/images/project_placeholder_300px.png" alt="">
-                    <p>Brief description</p>
-                    <a class="button" href="">Explore</a>
-                </section>
-                <section id="project5">
-                    <h3>Placeholder 5</h3>
-                    <img src="./assets/images/project_placeholder_300px.png" alt="">
-                    <p>Brief description</p>
-                    <a class="button" href="">Explore</a>
-                </section>
-            </div>
-        </article> -->

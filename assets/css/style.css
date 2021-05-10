@@ -69,40 +69,4 @@ html {
     scroll-behavior: smooth;
 } 
 
-/* Responsiveness */
-
-@media screen and (max-width: 768px) {
-    
-
-
-    main, header, footer, #about-me, #resume, #contact-information{
-        float: none;
-        width: 100%;
-        flex-wrap: wrap;
-        overflow: scroll;
-    }
-
-    .container{
-        flex: 0 0 50%;
-        max-width: 100%;
-    }
-
-    #work section{
-        width: 100%;
-    }
-
-    aside{
-        float: none;
-        width: 100%;
-        margin: 0px;
-        padding: 20px 0px 0px 0px;
-    }
-
-    .container #project1 {order: 1;}
-    .container #project2 {order: 2;}
-    .container #project3 {order: 3;}
-    .container #project4 {order: 4;}
-    .container #project5 {order: 5;}
-}
-
 

@@ -23,6 +23,7 @@ body {
     color: var(--EggshellWhite);
     background: var(--DarkPurple);
     border-color: var(--DarkPurple);
+    text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -35,6 +36,7 @@ body {
     color: var(--DarkPurple);
     background: var(--GreenSheen);
     border-color: var(--GreenSheen);
+    text-decoration: none;
 }
 
 .btn-secondary:hover {
@@ -51,6 +53,15 @@ body {
 /* CARDS */
 .card-body{
     background: var(--DutchWhite);
+}
+
+/* LINKS */
+a {
+    color: var(--RhytmPurple);
+    text-decoration: underline;
+}
+a:hover{
+    color: var(--DarkPurple)
 }
 
 /* scrolling beahvior */

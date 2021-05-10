@@ -1,285 +1,64 @@
-/* 0. GENERAL PROPERTIES
+ /* 0. GENERAL PROPERTIES */
+
 :root{
-    --blue01: #03045e;
-    --blue02: #023e8a;
-    --blue03: #0077b6;
-    --blue05: #00b4d8;
-    --blue07: #90e0ef;
-    --blue09: #caf0f8;
+    --DarkPurple: #310A31;
+    --RhytmPurple: #847996;
+    --GreenSheen: #88B7B5;
+    --CambridgeBlue: #A7CAB1;
+    --EggshellWhite:  #F4ECD6;
+    --DutchWhite: #EAD9AE;
 }
 
+/* PROPERTIES */
 body {
     margin: 0;
     padding: 0;
-    background: var(--blue09);
+    background: var(--EggshellWhite);
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    color: var(--blue01);
+/* BUTTONS */
+.btn-primary {
+    color: var(--EggshellWhite);
+    background: var(--DarkPurple);
+    border-color: var(--DarkPurple);
 }
 
-h1{
-    font-size: 2.8em;
+.btn-primary:hover {
+    color: var(--EggshellWhite);
+    background: var(--RhytmPurple);
+    border-color: var(--RhytmPurple);
 }
 
-h2{
-    font-size: 2em;
+.btn-secondary {
+    color: var(--DarkPurple);
+    background: var(--GreenSheen);
+    border-color: var(--GreenSheen);
 }
 
-h3{
-    font-size: 1.6em;
+.btn-secondary:hover {
+    color: var(--DarkPurple);
+    background: var(--CambridgeBlue);
+    border-color: var(--CambridgeBlue);
 }
 
-p, ul{
-    margin-top: 0;
-    line-height: 180%;
-    color: var(--blue02);
+/* NAVIGATION BAR */
+.navbar {
+    background: var(--RhytmPurple);
 }
 
-// 1. HEADER //
-
-header {
-    overflow: hidden;
-    height: 100px;
-    background: var(--blue01);
+/* CARDS */
+.card-body{
+    background: var(--DutchWhite);
 }
 
-header section {
-	width: 100%;
-	margin: 0px auto;
-	overflow: hidden;
-	width: 100%;
-	height: 150px;
-	margin: 0 auto;
-	padding: 0px 0px;
-}
+/* scrolling beahvior */
+html {
+    scroll-behavior: smooth;
+} 
 
-// 1.2. TITLE //
-header section h1{
-    float: left;
-    width: 30%;
-    color: var(--blue09);
-    line-height: 120px;
-    letter-spacing: -2px;
-    font-size: 3em;
-}
-
-header section h1 a {
-	text-transform: uppercase;
-	border: none;
-	background: none;
-	text-decoration: none;
-    color: var(--blue09);
-}
-
-// 1.2. NAVIGATION BAR //
-nav{
-    float: right;
-    width: 50%;
-    height: 90px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-nav ul{
-    float: right;
-    margin: 0;
-    padding: 50px 0px 0px 0px;
-    list-style: none;
-    line-height: normal;
-}
-
-nav li{
-    float: left;
-    padding: 0px 0px 0px 0px;
-}
-
-nav a{
-    display: block;
-    margin-right: 1px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 300;
-    color: var(--blue09);
-    border: none;
-}
-
-header nav a:hover{
-    background-color: var(--blue07);
-    color: var(--blue02);
-}
-
-// 2. Main //
-main{
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px 0px;
-    background: var(--blue09);
-}
-
-// 2.1. About Me //
-#about-me{
-    float:none;
-    width: 100%x;
-    padding: 0px;
-    overflow: hidden;
-    margin-bottom: 40px;
-    border-bottom: 1px solid var(--blue01);
-}
-
-#about-me h2{
-    padding: 7px 0px 40px 0px;
-}
-
-#about-me p{
-    padding: 0px 0px 0px 0px;
-	text-align: justify;
-}
-
-// 2.2. Projects Portfolio //
-#work {
-    overflow: hidden;
-    width: 100%;
-    margin: 0px auto;
-    padding: 10px 10px;
-    border-bottom: 1px solid var(--blue01);
-    text-align: center;
-}
-
-#work h2{
-	padding: 20px 0px 20px 0px;
-	font-size: 30px;
-}
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-}
-
-.container section{
-    flex-shrink: 2;
-    flex-basis: 50%;
-}
-
-#project1 {
-	float: none;
-}
-
-#project2 {
-	float: left;
-	width: 30%;
-	// margin-right: 50px; //
-}
-
-#project3 {
-	float: right;
-	width: 30%;
-}
-
-#project4 {
-	float: left;
-	width: 30%;
-	// margin-right: 50px; //
-}
-
-#project5 {
-	float: right;
-	width: 30%;
-}
-
-.button {
-	display: block;
-    float: none;
-	width: 8.8%;
-	padding: 5px 5px;
-    margin-left: auto;
-    margin-right: auto;
-	background: var(--blue01);
-	border-radius: 5px;
-	color: var(--blue07);
-	text-align: center;
-	text-decoration: none;
-}
-//  //
-// 2.3. Resume //
-#resume{
-    float: left;
-	width: 66%;
-	padding: 0px 10px 0px 0px;
-	overflow: hidden;
-	margin-bottom: 40px;
-    border-right: 1px solid var(--blue01);
-}
-
-
-
-#resume h2 {
-	padding: 7px 0px 40px 0px;
-	letter-spacing: -1px;
-}
-
-#resume p {
-	padding: 0px 0px 0px 0px;
-	text-align: justify;
-}
-
-// 2.4. Contact Information (Aside) //
-aside{
-    float: right;
-    width: 27%;
-    margin: 0px;
-    padding: 20px 0px 0px 0px;
-    
-}
-
-aside h2 {
-	height: 38px;
-	padding: 0px 0px 30px 0px;
-	letter-spacing: -.5px;
-	font-size: 1.8em;
-	color: #222222;
-}
-
-aside ul {
-	margin: 0px 0px;
-	padding-bottom: 20px;
-	list-style: none;
-}
-
-aside li {
-	line-height: 40px;
-	border-bottom: 1px solid #E7EBED;
-	margin: 0px 0px;
-	border-left: none;
-}
-
-// 3. Footer //
-footer{
-    height: 50px;
-    margin: 0 auto;
-    padding: 20px 0px;
-    background: var(--blue01);
-}
-
-footer h2, footer p{
-    margin: 0;
-	padding-top: 2px;
-	letter-spacing: 1px;
-	line-height: normal;
-	text-align: center;
-	color: var(--blue07);
-}
-
-// Responsiveness //
+/* Responsiveness */
 
 @media screen and (max-width: 768px) {
     
@@ -315,8 +94,4 @@ footer h2, footer p{
     .container #project5 {order: 5;}
 }
 
-// scrolling beahvior//
-html {
-    scroll-behavior: smooth;
-} 
-*/
+
